@@ -15,7 +15,7 @@ $(function(){
 });
 
 ```
-
+```
 Steamappid g[i].appid    
 Gamename g[i].name
 Playtime last 2 weeks g[i].playtime_2weeks
@@ -30,3 +30,4 @@ steam/allGames.php
 Sort gametime forever
 steam/allGames.php?sort=ASC
 steam/allGames.php?sort=DESC
+```
