@@ -1,0 +1,101 @@
+/*
+// Author: Theenoro
+// Year : ©2015
+// -------------------------------------
+*/
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+*{
+	font-family: 'Raleway', sans-serif;
+}
+body{
+    margin:0;
+    background-color: #1D619A;
+    color:#FFF;
+}
+a{
+	cursor:pointer;
+	color:#FFF;
+	transition:all .5s;
+}
+a:hover{
+	transition:all .5s;
+	color:#D5D5D5;
+}
+#profile-head{
+    background-color: #0C4779;
+    color: #FFF;
+    border-bottom: 3px solid rgba(95, 163, 220, 0.62);
+    height: 200px;
+}
+.container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+}
+#profile-avatar{
+	display: inline-block;
+	width: 184px;
+	height: 184px;
+	margin-top: 7px;
+	border: 1px solid #454545;
+}
+#profile-avatar img{
+  border-radius: 5px 5px;
+}
+#profile-name{
+	display: inline-block;
+	position: relative;
+	top: -90px;
+	font-style: oblique;
+	font-weight: 600;
+	left: 30px;
+	font-size: 31px;
+	text-shadow: 4px 4px 4px #4E9EE2;
+}
+#profile-status{
+  position: relative;
+  top: -90px;
+  left: 220px;
+}
+#profile-menu {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-top: 1px solid #3B96E2;
+    border-bottom: 1px solid #3B96E2;
+}
+#profile-info{
+	width:100%;
+	text-align: justify;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.profile-video{
+	width: 100%;
+	height: 450px;
+}
+.game{border: 1px solid #0B5FA7;box-shadow: 1px 1px 6px rgb(14, 70, 117);margin: 5px;padding: 5px;border-radius: 5px;height: 69px;}
+.game-logo{
+	display:inline-block;
+	vertical-align: middle;
+	height: 69px;
+}
+.game-name{
+	display:inline-block;
+	position: relative;
+	top: -18px;
+	left: 10px;
+	color: #FFF;
+	white-space: pre;
+}
+.game-times{
+  position: relative;
+  top: -35px;
+  left: 194px;
+}
+.game-last2weeks{
+  display:inline-block;
+}
+.game-time{
+  display:inline-block;
+}

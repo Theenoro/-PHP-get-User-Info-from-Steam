@@ -4,7 +4,22 @@
 	// -------------------------------------
 
 	require("config.php");
-	$ga = json_decode(file_get_contents('http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key='.api_key.'&steamid='.steamid.'&format=json&include_appinfo=1'),true)['response']['games'];
+	require("steamapi_status.php");
+
+	$cache_file = cache_games;
+	$file_exists = file_exists($cache_file);
+	$steamstatus = getStatus("api.steampowered.com", 80);
+
+	if ($file_exists === true){
+		$file = file_get_contents($cache_file);
+	}
+	if (($file_exists === true && (filemtime($cache_file) > (time() - 60 * cache_games_time )) && $file !== "") || $steamstatus === "offline") {
+   		$file = json_decode(file_get_contents($cache_file),true);
+	}else{
+			$file = json_decode(file_get_contents('http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key='.api_key.'&steamid='.steamid.'&format=json&include_appinfo=1'),true);
+			file_put_contents($cache_file, json_encode($file), LOCK_EX);
+	}
+	$ga = $file['response']['games'];
 
 	if(isset($_GET['sort'])){
 		$temp = "";
