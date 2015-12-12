@@ -11,4 +11,4 @@ JSON: to only get an output as json file you only need the steam folder
 
 As functionally test I've put the an index.html and app.js file into it if you want to test it.
 
-![Alt text](/examples/example.jpg?raw=true "Optional Title")
+![Alt text](/examples/example.jpg?raw=true "example Img")
