@@ -1,5 +1,5 @@
 // Author: Theenoro
-// Year : ©2015
+// Year :  2015
 // -------------------------------------
 $(function(){
   $('#profile-recently').html('Loading...');

@@ -1,6 +1,6 @@
 /*
 Author: Theenoro
-Year : ©2015 
+Year :  2015 
 */
 $(function(){
 	var profile = $.getJSON( "steam/profile.php", function() {

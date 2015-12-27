@@ -1,6 +1,6 @@
 <?php
 	// Author: Theenoro
-	// Year : ©2015
+	// Year :  2015
 	// -------------------------------------
 
 	define("api_key",'your-api-key');

@@ -1,6 +1,6 @@
 /*
 Author: Theenoro
-Year : ©2015
+Year :  2015
 */
 $(function(){
 	var allgames = $.getJSON( "../../steam/allGames.php?sort=ASC", function() {
